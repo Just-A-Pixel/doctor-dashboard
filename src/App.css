@@ -1,38 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 .App {
+  overflow-y: hidden;
+  height: 100%;
+  background-color: #fbf9fa;
+}
+
+.main_title {
+  margin-top: 30px;
   text-align: center;
+  color: #ff4768;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 7px;
+  font-size: 35px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline__Appointments,
+.underline__Patients,
+.underline__Reports {
+  max-width: 290px;
+  margin: auto;
+  position: relative;
+  margin-top: 12px;
+  border: solid red;
+  border-radius: 50px;
+  transition: 300ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.underline__Appointments {
+  left: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.underline__Patients {
+  left: 40px;
+  max-width: 200px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.underline__Reports {
+    max-width: 170px;
+    left: 40px;
 }

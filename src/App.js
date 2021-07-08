@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Appointment from './Appointment';
+import Patients from "./Patients";
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./Navbar";
+import Reports from "./Reports";
+
+const title = ["Appointments", "Patients", "Reports"];
 
 function App() {
+  const [name, setName] = useState(title[0])
+  const getActive = (active) => setName(title[active-1])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar getActive={getActive} />
+      <h1 className="main_title">{name}</h1>
+      <hr className={`underline__${name}`} />
+
+     {name=='Appointments'?<Appointment />: null}
+     {name=='Patients'?<Patients />: null}
+     {name=='Reports'?<Reports />: null}
+
+      {/* <Appointment /> */}
     </div>
   );
 }

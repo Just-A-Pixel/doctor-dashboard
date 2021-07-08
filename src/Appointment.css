@@ -1,0 +1,31 @@
+.appointment {
+    margin-top: 20px;
+    max-height: 600px;
+    overflow-y: scroll;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ::-webkit-scrollbar {
+    width: 100px;
+  } */
+
+  .appointment::-webkit-scrollbar{
+    width: 10px;
+    margin-left: 20px;
+  }
+
+  .appointment::-webkit-scrollbar-thumb {
+    background: rgba(173, 172, 172, 0.664);
+    border-radius: 50px;
+  }
+
+  .appointment::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(128, 128, 128);
+  }
+
+  @media screen and (max-width:1190px)  {
+    .appointment {
+      margin-left: 90px;
+    }
+  }
