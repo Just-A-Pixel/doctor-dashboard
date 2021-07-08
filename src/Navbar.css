@@ -18,9 +18,10 @@
   z-index: 20;
 }
 
-.navbar__arrow {
+.arrow {
   width: 30px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .navbar__open {

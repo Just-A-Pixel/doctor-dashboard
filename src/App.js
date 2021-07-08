@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Appointment from './Appointment';
 import Patients from "./Patients";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Navbar";
 import Reports from "./Reports";
@@ -19,9 +18,9 @@ function App() {
       <h1 className="main_title">{name}</h1>
       <hr className={`underline__${name}`} />
 
-     {name=='Appointments'?<Appointment />: null}
-     {name=='Patients'?<Patients />: null}
-     {name=='Reports'?<Reports />: null}
+     {name==='Appointments'?<Appointment />: null}
+     {name==='Patients'?<Patients />: null}
+     {name==='Reports'?<Reports />: null}
 
       {/* <Appointment /> */}
     </div>

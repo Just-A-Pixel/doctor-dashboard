@@ -8,7 +8,7 @@ function Card() {
       {/* Time and name */}
       <div>
         <div className="card__header">
-          <img src={clock} className="card__logo" />
+          <img src={clock} alt="" className="card__logo" />
           <h6 className="card__time">8:35</h6>
         </div>
         <h3 className="card__name">Bob Singh</h3>

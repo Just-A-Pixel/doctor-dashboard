@@ -1,5 +1,5 @@
 import React from "react";
-import appointment from "../img/appointment.svg";
+// import appointment from "../img/appointment.svg";
 import "./Icon.css";
 
 function icon({ id, name, active, setActive, open,title }) {

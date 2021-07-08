@@ -6,7 +6,7 @@ function Arrow() {
     const [open, setOpen] = useState(false)
   return (
     <>
-<img src={open?cross:arrow} className="arrow" onClick={()=>setOpen(!open)}/>
+<img src={open?cross:arrow} alt="" className="arrow" onClick={()=>setOpen(!open)}/>
     </>
   );
 }
